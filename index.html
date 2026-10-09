@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffd6e8">
+  <meta name="description" content="Una pequeña aventura de cumpleaños para Briseida.">
+  <title>Una aventura para Briseida 💗</title>
+</head>
+
+<body>
+  <!-- ESCENA 1: BIENVENIDA -->
+  <section id="scene1" class="scene active">
+    <div class="decoration">💗 ✨ 🎮 ✨ 💗</div>
+
+    <p class="eyebrow">Un pequeño detalle hecho con cariño</p>
+
+    <h1>Feliz cumpleaños, ojitos dulces 💗</h1>
+
+    <p>
+      Hoy quería tener un pequeño detalle contigo.<br><br>
+      Así que preparé una aventura para ti,
+      hecha con mucho cariño.<br><br>
+      ¿Lista para comenzar? 🎮✨
+    </p>
+
+    <button id="startBtn">Comenzar aventura 🎮</button>
+  </section>
+
+  <!-- ESCENA 2: MINIJUEGO -->
+  <section id="scene2" class="scene">
+    <div class="decoration">⭐ 💎 🎁</div>
+
+    <h2>¡A conseguir el botín! ⭐</h2>
+
+    <p>
+      ¡Hoy cumples 22 años! 💗<br><br>
+      Tu misión es recoger 22 objetos.
+      ¡Demuestra tus habilidades y consigue
+      todo el botín! 🎮
+    </p>
+
+    <h3 id="score">0 / 22 ⭐</h3>
+
+    <div id="gameArea" aria-label="Zona del minijuego"></div>
+
+    <p class="hint">Haz clic en cada objeto para recogerlo.</p>
+  </section>
+
+  <!-- ESCENA 3: PREGUNTA DE FORTNITE -->
+  <section id="scene3" class="scene">
+    <div class="decoration">🎮 ✨ 💗</div>
+
+    <h2>Una última pregunta</h2>
+
+    <p>Esta debería ser fácil, ¿no? 😏</p>
+
+    <h3>¿Qué juego hemos compartido juntos?</h3>
+
+    <div class="answers">
+      <button class="wrong">Minecraft ⛏️</button>
+      <button class="correct">Fortnite 🎮</button>
+      <button class="wrong">Valorant 🎯</button>
+    </div>
+
+    <p id="response" aria-live="polite"></p>
+  </section>
+
+  <!-- ESCENA 4: CARTA -->
+  <section id="scene4" class="scene">
+    <div class="decoration">💗 ✨ 💗</div>
+
+    <h1>Un pequeño detalle para ti ✨</h1>
+
+    <div id="letterBox">
+      <p id="typingText"></p>
+      <span id="cursor">▋</span>
+    </div>
+
+    <button id="giftBtn" hidden>Abrir regalo 🎁</button>
+  </section>
+
+  <!-- ESCENA 5: FINAL -->
+<section id="scene5" class="scene">
+  <div class="finalCard">
+    <h1>Para ti, ojitos dulces</h1>
+
+    <p class="finalMessage">
+      Ojalá este pequeño detalle consiga sacarte
+      una sonrisa y te recuerde que alguien
+      quiso hacer algo bonito para ti.
+    </p>
+
+    <p class="finalSignature">
+      Disfruta mucho tus 22 años.
+    </p>
+
+    <p class="finalGoodbye">
+      Feliz cumpleaños, Briseida. 💗
+    </p>
+  </div>
+</section>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
